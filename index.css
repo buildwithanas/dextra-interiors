@@ -1,0 +1,504 @@
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0c0c0c;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+
+  nav {
+    background: #0a0a0a;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-inner {
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+  }
+
+  .nav-logo-icon {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #d4af37;
+    flex-shrink: 0;
+}    
+
+.nav-logo-icon img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transform: scale(1.9);
+}
+
+  .nav-logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    padding-right: 10px;
+  }
+
+  .nav-logo-text strong {
+    font-weight: 600;
+  }
+
+  .nav-logo-text strong::after {
+    content: '';
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+  }
+
+  nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: #faf9f5;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 0;
+    transition: color 0.25s ease;
+  }
+
+  nav ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: #d4af37;
+    transition: width 0.3s ease;
+  }
+
+  nav ul a:hover {
+    color: #f4f1ea;
+  }
+
+  nav ul a:hover::after {
+    width: 100%;
+  }
+
+  
+  @media (max-width: 720px) {
+    .nav-inner {
+      padding: 16px 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    nav ul {
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+    .nav-logo-text {
+      font-size: 19px;
+    }
+  }
+
+
+/* ============================================
+   DEXTRA INTERIORS — HERO SECTION
+   Brand: Black & Gold
+   ============================================ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 70px;
+  padding: 0 40px;
+  max-width: 5000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid #e9b60d;
+  box-shadow: 0 15px 35px rgba(233, 182, 13, 0.25);
+  flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 10000;
+  margin-bottom: 24px;
+  color: #e9b60d;
+  letter-spacing: -0.02em;
+}
+
+.header-text p {
+  font-size: 3rem;
+  line-height: 3;
+  margin-bottom: 18px;
+  color: #f0f0f0;
+}
+
+.header-text p strong {
+  color: #e9b60d;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn,
+.cta-btn,
+.cta-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+/* Primary button — solid gold */
+.cta-btn {
+  background: #e9b60d;
+  color: #0c0c0c;
+}
+.cta-btn:hover {
+  background: #ffc400;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(233, 182, 13, 0.35);
+}
+
+/* Secondary button — gold outline */
+.cta-outline {
+  background: transparent;
+  color: #e9b60d;
+  border: 1px solid #d4af37;
+}
+.cta-outline:hover {
+  background: rgba(233, 182, 13, 0.1);
+  border-color: #ffc400;
+  color: #ffc400;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+  }
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ============================================
+   DEXTRA INTERIORS — ART HERO BANNER
+   ============================================ */
+
+.head {
+  position: relative;
+  width: 100%;
+  min-height: 2000px;
+  background-image: url('images/p.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+/* Dark gradient overlay so text stays readable over any photo */
+.head::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.404) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+.head-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.head h2 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #e9b60d;
+  letter-spacing: -0.02em;
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+.head p {
+  font-size: 3rem;
+  line-height: 1.9;
+  color: #f5f5f5;
+  margin-bottom: 16px;
+}
+
+.head .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* ============================================
+   BUTTONS (shared with hero section)
+   ============================================ */
+.btn,
+.cta-btn,
+.cta-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.cta-btn {
+  background: #e9b60d;
+  color: #0c0c0c;
+}
+.cta-btn:hover {
+  background: #ffc400;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(233, 182, 13, 0.35);
+}
+
+.cta-outline {
+  background: transparent;
+  color: #e9b60d;
+  border: 1px solid #d4af37;
+}
+.cta-outline:hover {
+  background: rgba(233, 182, 13, 0.12);
+  border-color: #ffc400;
+  color: #ffc400;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 600px) {
+  .head {
+    min-height: 480px;
+  }
+  .head h2 {
+    font-size: 2rem;
+  }
+  .head p {
+    font-size: 1rem;
+  }
+  .cta-btn,
+  .cta-outline {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+.me {
+  color:#ffc400;
+  font-size: 2.8rem;
+  font-weight: 20;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+/* ============================================
+   DEXTRA INTERIORS — WHAT I DO / SERVICES
+   ============================================ */
+
+.section-title {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #e9b60d;
+  letter-spacing: -0.02em;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 2.55rem;
+  color: #c9c9c9;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  max-width: 5000px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+  height: 900px;
+}
+
+.service-card {
+  background: #141414;
+  border: 1px solid rgba(233, 182, 13, 0.25);
+  border-radius: 14px;
+  padding: 36px 26px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9b60d;
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  font-size: 1.9rem;
+  background: rgba(233, 182, 13, 0.1);
+  border: 1px solid rgba(233, 182, 13, 0.35);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 4rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 60px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+/* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      margin-bottom: 60px;
+      overflow: hidden;
+      color: #ffffff;
+
+    }
+
+    .stat-item {
+      flex: 1;
+      padding: 24px 20px;
+      text-align: center;
+      border-right: 1px solid #2a2a2a;
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-number {
+      font-size: 4rem;
+      font-weight: 800;
+      color: #e9b60d;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-top: 4px;
+    }
