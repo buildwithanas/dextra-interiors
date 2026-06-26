@@ -15,7 +15,7 @@
   }
 
   .nav-inner {
-    max-width: 1400px;
+    max-width: 1900px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -26,13 +26,13 @@
   .nav-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     text-decoration: none;
   }
 
   .nav-logo-icon {
-    width: 150px;
-    height: 150px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #d4af37;
@@ -40,10 +40,11 @@
   }
 
   .nav-logo-icon img {
-    width: 130%;
-    height: 130%;
+    width: 92%;
+    height: 90%;
     object-fit: cover;
     display: block;
+    transform: scale(1.69);
   }
 
   .nav-logo-text {
@@ -117,10 +118,25 @@
     }
   }
 
-  
-
+.header {
+  color: #deb222;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.header h1 {
+  color: #deb222;
+  font-size: 6rem;
+}
+.header p {
+  color: #d7d4cc;
+  font-size: 3rem;
+}
 
 h2 {
+  font-weight: 500;
+  font-size: 4.4rem;
   color: #d4af37;
   text-align: center;s
 }

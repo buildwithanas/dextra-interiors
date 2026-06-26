@@ -31,8 +31,8 @@
   }
 
   .nav-logo-icon {
-    width: 420px;
-    height: 420px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #d4af37;
@@ -41,9 +41,9 @@
 
 .nav-logo-icon img {
     width: 90%;
-    height: 90%;
+    height: 87%;
     object-fit: cover;
-    transform: scale(1.9);
+    transform: scale(1.69);
 }
 
   .nav-logo-text {
@@ -74,7 +74,7 @@
     position: relative;
     text-decoration: none;
     color: #faf9f5;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -102,7 +102,7 @@
   }
 
   
-  @media (max-width: 720px) {
+  @media (max-width: 700px) {
     .nav-inner {
       padding: 16px 20px;
       flex-wrap: wrap;
@@ -129,14 +129,14 @@
   gap: 60px;
   margin-bottom: 70px;
   padding: 0 40px;
-  max-width: 5000px;
+  max-width: 3000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero img {
-  width: 50%;
-  height: 100%;
+  height: 38%; 
+  width: 38%;
   object-fit: cover;
   border-radius: 16px;
   border: 4px solid #e9b60d;
@@ -150,16 +150,16 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 10000;
+  font-size: 2.45rem;
+  font-weight: 1000;
   margin-bottom: 24px;
   color: #e9b60d;
   letter-spacing: -0.02em;
 }
 
 .header-text p {
-  font-size: 3rem;
-  line-height: 3;
+  font-size: 2rem;
+  line-height: 2;
   margin-bottom: 18px;
   color: #f0f0f0;
 }
@@ -281,8 +281,8 @@
 }
 
 .head h2 {
-  font-size: 8rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 500;
   color: #e9b60d;
   letter-spacing: -0.02em;
   margin-bottom: 22px;
@@ -290,7 +290,7 @@
 }
 
 .head p {
-  font-size: 3rem;
+  font-size: 1.8rem;
   line-height: 1.9;
   color: #f5f5f5;
   margin-bottom: 16px;
@@ -315,8 +315,8 @@
   gap: 8px;
   padding: 12px 28px;
   border-radius: 8px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -367,8 +367,8 @@
 
 .me {
   color:#ffc400;
-  font-size: 2.8rem;
-  font-weight: 20;
+  font-size: 2rem;
+  font-weight: 215;
   text-align: center;
   padding: 20px;
   margin-bottom: 100px;
@@ -380,7 +380,7 @@
 
 .section-title {
   text-align: center;
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #e9b60d;
   letter-spacing: -0.02em;
@@ -390,7 +390,7 @@
 
 .section-subtitle {
   text-align: center;
-  font-size: 2.55rem;
+  font-size: 2rem;
   color: #c9c9c9;
   margin-bottom: 50px;
 }
@@ -402,7 +402,7 @@
   max-width: 5000px;
   margin: 0 auto;
   padding: 0 40px 80px;
-  height: 900px;
+  height: 700px;
 }
 
 .service-card {
@@ -424,8 +424,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 104px;
-  height: 104px;
+  width: 84px;
+  height: 84px;
   font-size: 1.9rem;
   background: rgba(233, 182, 13, 0.1);
   border: 1px solid rgba(233, 182, 13, 0.35);
@@ -434,14 +434,14 @@
 }
 
 .service-card h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #f0f0f0;
   margin-bottom: 12px;
 }
 
 .service-card p {
-  font-size: 4rem;
+  font-size: 1.96rem;
   line-height: 1.6;
   color: #b0b0b0;
 }
@@ -491,14 +491,372 @@
     }
 
     .stat-number {
-      font-size: 4rem;
+      font-size: 2.4rem;
       font-weight: 800;
       color: #e9b60d;
       display: block;
     }
 
     .stat-label {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #ffffff;
       margin-top: 4px;
     }
+
+    /* ---projects section--- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 4000px;
+  margin: 0 auto;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-card {
+  background: #141414;
+  border: 1px solid rgba(233, 182, 13, 0.25);
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  height: 70%;
+  width: 70%;
+}
+
+.projects-card:hover {
+  transform: translateY(-6px);
+  border-color: #b38f18;
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+.projects-card p {
+  font-size: 1.96rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+  text-align: center;
+}
+.projectz {
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+  margin-bottom: 800px;
+}
+/* ============================================
+   DEXTRA INTERIORS — PROJECTS CTA / IMAGE FIX
+   ============================================ */
+
+.cta-buttons.center {
+  justify-content: center;
+  margin-top: 30px;
+  margin-top: 800px;
+}
+
+/* ============================================
+   DEXTRA INTERIORS — TESTIMONIALS SECTION
+   ============================================ */
+
+.testimonials-section {
+  padding: 0 40px 80px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #141414;
+  border: 1px solid rgba(233, 182, 13, 0.25);
+  border-radius: 14px;
+  padding: 36px 30px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9b60d;
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+
+.testimonial-stars {
+  color: #e9b60d;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #d8d8d8;
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(233, 182, 13, 0.18);
+  padding-top: 16px;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: #f0f0f0;
+  font-size: 1.15rem;
+}
+
+.testimonial-role {
+  color: #e9b60d;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-section {
+    padding: 0 20px 60px;
+  }
+}
+
+/* ============================================
+   DEXTRA INTERIORS — HOW WE WORK / PROCESS
+   ============================================ */
+
+.process-section {
+  padding: 0 40px 80px;
+}
+
+.process-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.process-step {
+  background: #141414;
+  border: 1px solid rgba(233, 182, 13, 0.25);
+  border-radius: 14px;
+  padding: 32px 22px;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+  border-color: #e9b60d;
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+
+.process-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 1.6rem;
+  background: rgba(233, 182, 13, 0.1);
+  border: 1px solid rgba(233, 182, 13, 0.35);
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+
+.process-number {
+  display: block;
+  color: #e9b60d;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.process-step h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+.process-arrow {
+  align-self: center;
+  color: #e9b60d;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .process-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .process-arrow {
+    display: none;
+  }
+}
+
+/* ============================================
+   DEXTRA INTERIORS — WHY CHOOSE US
+   ============================================ */
+
+.features-section {
+  padding: 0 40px 80px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #141414;
+  border: 1px solid rgba(233, 182, 13, 0.25);
+  border-radius: 14px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9b60d;
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  font-size: 1.5rem;
+  background: rgba(233, 182, 13, 0.1);
+  border: 1px solid rgba(233, 182, 13, 0.35);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+@media (max-width: 600px) {
+  .features-section {
+    padding: 0 20px 60px;
+  }
+}
+
+/* ============================================
+   DEXTRA INTERIORS — CALL TO ACTION
+   ============================================ */
+
+.cta-section {
+  background: linear-gradient(135deg, #141414 0%, #1a1505 100%);
+  border-top: 1px solid rgba(233, 182, 13, 0.3);
+  border-bottom: 1px solid rgba(233, 182, 13, 0.3);
+  text-align: center;
+  padding: 90px 40px;
+}
+
+.cta-section h2 {
+  font-size: 2.6rem;
+  color: #e9b60d;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  max-width: 700px;
+  margin: 0 auto 34px;
+  line-height: 1.7;
+}
+
+.cta-large {
+  font-size: 1.3rem;
+  padding: 16px 38px;
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    padding: 60px 20px;
+  }
+  .cta-section h2 {
+    font-size: 1.9rem;
+  }
+  .cta-section p {
+    font-size: 1.05rem;
+  }
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATION
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials-grid .testimonial-card:nth-child(2) { transition-delay: 0.12s; }
+.testimonials-grid .testimonial-card:nth-child(3) { transition-delay: 0.24s; }
+
+.process-grid .process-step:nth-of-type(2) { transition-delay: 0.12s; }
+.process-grid .process-step:nth-of-type(3) { transition-delay: 0.24s; }
+.process-grid .process-step:nth-of-type(4) { transition-delay: 0.36s; }
+
+.features-grid .feature-card:nth-child(2) { transition-delay: 0.1s; }
+.features-grid .feature-card:nth-child(3) { transition-delay: 0.2s; }
+.features-grid .feature-card:nth-child(4) { transition-delay: 0.3s; }
+.features-grid .feature-card:nth-child(5) { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
