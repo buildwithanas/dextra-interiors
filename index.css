@@ -11,6 +11,7 @@
     border-bottom: 1px solid rgba(212, 175, 55, 0.18);
     position: sticky;
     top: 0;
+    bottom: 20px;
     z-index: 100;
   }
 
@@ -31,8 +32,8 @@
   }
 
   .nav-logo-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #d4af37;
@@ -158,7 +159,7 @@
 }
 
 .header-text p {
-  font-size: 2rem;
+  font-size: 1.28rem;
   line-height: 2;
   margin-bottom: 18px;
   color: #f0f0f0;
@@ -250,7 +251,7 @@
 .head {
   position: relative;
   width: 100%;
-  min-height: 2000px;
+  height: 900px;
   background-image: url('images/p.jpeg');
   background-size: cover;
   background-position: center;
@@ -302,6 +303,13 @@
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 30px;
+}
+.h2-text {
+  color: #e9b60d;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /* ============================================
@@ -371,7 +379,7 @@
   font-weight: 215;
   text-align: center;
   padding: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 /* ============================================
@@ -380,8 +388,8 @@
 
 .section-title {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.4rem;
+  font-weight: 800;
   color: #e9b60d;
   letter-spacing: -0.02em;
   margin-top: 80px;
@@ -390,7 +398,7 @@
 
 .section-subtitle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #c9c9c9;
   margin-bottom: 50px;
 }
@@ -402,7 +410,7 @@
   max-width: 5000px;
   margin: 0 auto;
   padding: 0 40px 80px;
-  height: 700px;
+  height: 500px;
 }
 
 .service-card {
@@ -426,7 +434,7 @@
   justify-content: center;
   width: 84px;
   height: 84px;
-  font-size: 1.9rem;
+  font-size: 2rem;
   background: rgba(233, 182, 13, 0.1);
   border: 1px solid rgba(233, 182, 13, 0.35);
   border-radius: 50%;
@@ -434,14 +442,14 @@
 }
 
 .service-card h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #f0f0f0;
   margin-bottom: 12px;
 }
 
 .service-card p {
-  font-size: 1.96rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #b0b0b0;
 }
@@ -491,7 +499,7 @@
     }
 
     .stat-number {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 800;
       color: #e9b60d;
       display: block;
@@ -507,12 +515,12 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  max-width: 4000px;
-  margin: 0 auto;
-  height: 900px;
+  gap: 8px;
+  max-width: 3200px;
+  height: 790px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 90px;
 }
 
 .projects-card {
@@ -521,8 +529,8 @@
   border-radius: 14px;
   text-align: center;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  height: 70%;
-  width: 70%;
+  height: 67%;
+  width: 67%;
 }
 
 .projects-card:hover {
@@ -531,16 +539,19 @@
   box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
 }
 .projects-card p {
-  font-size: 1.96rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #b0b0b0;
   text-align: center;
 }
 .projectz {
   height: 70%;
-  width: 70%;
+  width: 80%;
   object-fit: cover;
-  margin-bottom: 800px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 /* ============================================
    DEXTRA INTERIORS — PROJECTS CTA / IMAGE FIX
@@ -548,8 +559,7 @@
 
 .cta-buttons.center {
   justify-content: center;
-  margin-top: 30px;
-  margin-top: 800px;
+  margin-top: -220px;
 }
 
 /* ============================================
@@ -584,17 +594,17 @@
 
 .testimonial-stars {
   color: #e9b60d;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   letter-spacing: 4px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .testimonial-text {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   line-height: 1.7;
   color: #d8d8d8;
   font-style: italic;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .testimonial-author {
@@ -605,14 +615,14 @@
 }
 
 .testimonial-name {
-  font-weight: 700;
+  font-weight: 750;
   color: #f0f0f0;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 .testimonial-role {
   color: #e9b60d;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   margin-top: 4px;
 }
 
@@ -636,7 +646,7 @@
    ============================================ */
 
 .process-section {
-  padding: 0 40px 80px;
+  padding: 0 20px 60px;
 }
 
 .process-grid {
@@ -670,9 +680,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  font-size: 1.6rem;
+  width: 80px;
+  height: 80px;
+  font-size: 1.9rem;
   background: rgba(233, 182, 13, 0.1);
   border: 1px solid rgba(233, 182, 13, 0.35);
   border-radius: 50%;
@@ -683,20 +693,20 @@
   display: block;
   color: #e9b60d;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
 }
 
 .process-step h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #f0f0f0;
   margin-bottom: 10px;
 }
 
 .process-step p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: #b0b0b0;
 }
@@ -704,7 +714,7 @@
 .process-arrow {
   align-self: center;
   color: #e9b60d;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   flex-shrink: 0;
 }
 
@@ -730,7 +740,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  max-width: 1600px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 
@@ -753,9 +763,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  font-size: 1.5rem;
+  width: 74px;
+  height: 74px;
+  font-size: 1.8rem;
   background: rgba(233, 182, 13, 0.1);
   border: 1px solid rgba(233, 182, 13, 0.35);
   border-radius: 50%;
@@ -763,14 +773,14 @@
 }
 
 .feature-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #f0f0f0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .feature-card p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: #b0b0b0;
 }
@@ -794,7 +804,7 @@
 }
 
 .cta-section h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: #e9b60d;
   font-weight: 600;
   margin-bottom: 20px;
@@ -802,7 +812,7 @@
 }
 
 .cta-section p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #f0f0f0;
   max-width: 700px;
   margin: 0 auto 34px;
@@ -810,7 +820,7 @@
 }
 
 .cta-large {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   padding: 16px 38px;
 }
 
@@ -819,10 +829,10 @@
     padding: 60px 20px;
   }
   .cta-section h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .cta-section p {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
   }
 }
 

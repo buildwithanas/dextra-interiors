@@ -31,27 +31,26 @@
   }
 
   .nav-logo-icon {
-    width: 420px;
-    height: 420px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #d4af37;
     flex-shrink: 0;
-  }
+}    
 
-  .nav-logo-icon img {
-    width: 92%;
-    height: 90%;
+.nav-logo-icon img {
+    width: 90%;
+    height: 87%;
     object-fit: cover;
-    display: block;
     transform: scale(1.69);
-  }
+}
 
   .nav-logo-text {
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     font-weight: 600;
-    color: #f4f1ea;
+    color: #ffffff;
     letter-spacing: 0.04em;
     padding-right: 10px;
   }
@@ -74,8 +73,8 @@
   nav ul a {
     position: relative;
     text-decoration: none;
-    color: #c9c5ba;
-    font-size: 40px;
+    color: #faf9f5;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -100,6 +99,22 @@
 
   nav ul a:hover::after {
     width: 100%;
+  }
+
+  
+  @media (max-width: 700px) {
+    .nav-inner {
+      padding: 16px 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    nav ul {
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+    .nav-logo-text {
+      font-size: 19px;
+    }
   }
 
   
