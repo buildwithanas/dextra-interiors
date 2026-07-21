@@ -1,10 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #0c0c0c;
-    font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-  }
+body {
+  background: #0c0c0c;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 /* ============================================
    NAVIGATION
@@ -160,42 +161,69 @@ nav ul a:focus-visible::after {
   }
 }
 
+/* ============================================
+   PAGE HEADER
+   ============================================ */
 .header {
   color: #deb222;
-  font-size: 2rem;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: clamp(50px, 8vw, 100px);
+  margin-bottom: clamp(50px, 8vw, 100px);
+  padding: 0 20px;
 }
+
 .header h3 {
   color: #deb222;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 16px;
 }
+
 .header p {
-  border-top: 10px;
   color: #d7d4cc;
-  font-size: 1.48rem;
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
 .intro {
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
   color: #d4af37;
   text-align: center;
+  padding: 0 20px;
 }
 
+/* ============================================
+   GALLERY GRID
+   ============================================ */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: clamp(12px, 2vw, 30px);
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 0 24px 60px;
   cursor: pointer;
 }
 
 .images {
-  height: 750px;
   width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.images:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(233, 182, 13, 0.18);
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 16px 50px;
+  }
 }
