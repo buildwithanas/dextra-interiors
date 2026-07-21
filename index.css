@@ -352,14 +352,15 @@ nav ul a:focus-visible::after {
 }
 
 .hero img {
-  width: 320px;
-  max-width: 100%;
+  width: 500px;
+  max-width: 110%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 10px;
   border: 4px solid #e9b60d;
   box-shadow: 0 15px 35px rgba(233, 182, 13, 0.25);
   flex-shrink: 0;
+  margin-top: 90px;
 }
 
 .header-text {
@@ -377,8 +378,8 @@ nav ul a:focus-visible::after {
 }
 
 .header-text p {
-  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
-  line-height: 1.8;
+  font-size: clamp(0.85rem, 1.6vw, 1.1rem);
+  line-height: 1.5;
   margin-bottom: 16px;
   color: #f0f0f0;
 }
