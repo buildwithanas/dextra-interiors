@@ -36,67 +36,139 @@
   </div>
 </nav>
 
-  <div class="contact-page">
+  <!-- ── Hero banner ── -->
+  <header class="contact-hero">
+    <div class="eyebrow">Get in touch</div>
+    <h1>Let's Build Something <span>Beautiful</span></h1>
+    <p>Have a project in mind? Reach out directly — we're always happy to talk about how we can transform your space.</p>
+  </header>
 
-    <!-- Header -->
-    <div class="contact-header">
-      <h1>Get In <span>Touch</span></h1>
+  <hr class="gold-rule">
+
+  <!-- ── Contact cards ── -->
+  <div class="contact-grid">
+
+    <!-- Phone -->
+    <a href="tel:+2348157422174" class="contact-card reveal" aria-label="Call Dextra Interiors">
+      <div class="card-icon" aria-hidden="true">📞</div>
+      <span class="card-label">Phone</span>
+      <span class="card-value">+234 815 742 2174</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/2349039780351" target="_blank" rel="noopener noreferrer"
+       class="contact-card reveal" aria-label="Message Dextra Interiors on WhatsApp">
+      <div class="card-icon" aria-hidden="true">💬</div>
+      <span class="card-label">WhatsApp</span>
+      <span class="card-value">+234 903 978 0351</span>
+      <span class="card-note">Quick replies, usually within the hour</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:hello@dextrainteriors.com" class="contact-card reveal"
+       aria-label="Email Dextra Interiors">
+      <div class="card-icon" aria-hidden="true">✉️</div>
+      <span class="card-label">Email</span>
+      <span class="card-value">dextrapaintingandinterior@gmail.com</span>
+      <span class="card-note">We reply within 24 hours</span>
+    </a>
+
+    <!-- Location -->
+    <div class="contact-card reveal" style="cursor: default;">
+      <div class="card-icon" aria-hidden="true">📍</div>
+      <span class="card-label">Location</span>
+      <span class="card-value">Lagos, Nigeria</span>
+      <span class="card-note">Available for projects across Nigeria</span>
     </div>
 
-
-    <!-- Two-column layout -->
-    <div class="contact-layout">
-
-      <!-- Left col: info + socials -->
-      <div class="contact-info-col">
-        <h2>Contact Info</h2>
-        <p>Prefer direct contact? Here are all the ways to reach me.</p>
-
-        <a class="info-card" href="mailto:anasamoo0704@gmail.com">
-          <div class="info-icon">📧</div>
-          <div class="info-card-text">
-            <div class="label">Email</div>
-            <div class="value">anasamoo0704@gmail.com</div>
-          </div>
-        </a>
-
-        <a class="info-card" href="tel:07043420968">
-          <div class="info-icon">📞</div>
-          <div class="info-card-text">
-            <div class="label">Phone</div>
-            <div class="value">07043420968 / 08087315891</div>
-          </div>
-        </a>
-
-        <div class="info-card" style="cursor:default">
-          <div class="info-icon">📍</div>
-          <div class="info-card-text">
-            <div class="label">Location</div>
-            <div class="value">Ikorodu, Lagos State, Nigeria</div>
-          </div>
-        </div>
-
-        <!-- Socials -->
-        <div class="socials-title">Find me online</div>
-        <div class="socials-grid"
-          <a class="social-link" href="https://www.instagram.com/mmhariam_?igsh=ZjFxOWg5aWJseXl1" target="_blank">
-            <span class="s-icon">📸</span> Instagram
-          </a>
-          <a class="social-link" href="https://www.tiktok.com/@dextra.interiors?_r=1&_t=ZS-98F0pXReo54" target="_blank">
-            <span class="s-icon">🎵</span> TikTok
-          </a>
-        </div>
-      </div>
-
-
-
-  <div class="footer">
-    <p>&copy; 2026 Dextra-Interiors. All rights reserved.</p>
   </div>
 
-  <script>
-  
+  <!-- ── Social links ── -->
+  <section class="social-section" aria-label="Social media links">
+    <p class="social-heading">Follow our work</p>
+    <div class="social-row">
 
+      <a href="https://www.instagram.com/mmhariam_?igsh=ZjFxOWg5aWJseXl1"
+         target="_blank" rel="noopener noreferrer"
+         class="social-link reveal"
+         aria-label="Dextra Interiors on Instagram">
+        <span class="social-icon" aria-hidden="true">📸</span>
+        Instagram
+      </a>
+
+      <a href="https://www.facebook.com/Dextra.interiors"
+         target="_blank" rel="noopener noreferrer"
+         class="social-link reveal"
+         aria-label="Dextra Interiors on Facebook">
+        <span class="social-icon" aria-hidden="true">👤</span>
+        Facebook
+      </a>
+
+      <a href="https://www.tiktok.com/@dextra.interiors?_r=1&_t=ZS-98F0pXReo54"
+         target="_blank" rel="noopener noreferrer"
+         class="social-link reveal"
+         aria-label="Dextra Interiors on TikTok">
+        <span class="social-icon" aria-hidden="true">🎵</span>
+        TikTok
+      </a>
+
+      
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="contact-footer">
+    &copy; <span id="year"></span> <span>Dextra Interiors</span>. All rights reserved.
+  </footer>
+
+  <script>
+    /* Auto year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* Scroll reveal */
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script>
     // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
