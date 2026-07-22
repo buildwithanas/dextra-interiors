@@ -404,7 +404,7 @@ nav ul a:focus-visible::after {
   .hero img {
     width: 100%;
     max-width: 340px;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 5;
   }
   .cta-buttons {
     justify-content: center;

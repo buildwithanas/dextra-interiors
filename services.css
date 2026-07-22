@@ -303,6 +303,7 @@ nav ul a:focus-visible::after {
     margin-bottom: 12px;
     text-align: center;
     margin-left: 120px;
+    
 }   
 
 @media (max-width: 1000px) {
@@ -316,7 +317,7 @@ nav ul a:focus-visible::after {
 
 .service-title {
     font-size: clamp(1.1rem, 3.3vw, 2.4rem);
-    font-weight: 500;
+    font-weight: 800;
     color: #e9b60d;
     text-align: center;
     margin-bottom: 20px;
@@ -396,7 +397,7 @@ nav ul a:focus-visible::after {
 .service-card p {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #c0bebe;
   justify-content: left;
   text-align: left;
   
@@ -405,14 +406,14 @@ nav ul a:focus-visible::after {
 .service-card h4 {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #ebe8e8;
   display: left;
 }
 
 .service-card ul {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #cecccc;
   justify-content: left;
   margin-bottom: 10px;
   text-align: left;
@@ -426,7 +427,7 @@ nav ul a:focus-visible::after {
 
   .section-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: #e9b60d;
     text-align: center;
     margin-bottom: 20px;
@@ -482,16 +483,16 @@ nav ul a:focus-visible::after {
 }
 
 .process-step h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #f0f0f0;
+  font-size: 1.0rem;
+  font-weight: 450;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .process-step p {
   font-size: 0.75rem;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #c9c5c5;
 }
 
 .process-arrow {
