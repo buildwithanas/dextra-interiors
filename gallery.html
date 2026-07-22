@@ -46,7 +46,7 @@
   <h3>My Gallery</h3>
 </div>
 
-<div class="gallery">
+<div class="gallery reveal">
   <img src="images/a.jpeg" class="images" alt="Dextra Interiors gallery piece">
   <img src="images/b.jpeg" class="images" alt="Dextra Interiors gallery piece">
   <img src="images/c.jpeg" class="images" alt="Dextra Interiors gallery piece">
@@ -68,6 +68,9 @@
   <img src="images/t.jpeg" class="images" alt="Dextra Interiors gallery piece">
   <img src="images/u.jpeg" class="images" alt="Dextra Interiors gallery piece">
   <img src="images/v.jpeg" class="images" alt="Dextra Interiors gallery piece">
+  <img src="images/w.jpeg" class="images" alt="Dextra Interiors gallery piece">
+  <img src="images/x.jpeg" class="images" alt="Dextra Interiors gallery piece">
+  <img src="images/y.jpeg" class="images" alt="Dextra Interiors gallery piece">
 </div>
 
 <script>
@@ -87,6 +90,24 @@
       navToggle.classList.remove('open');
       navToggle.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // Scroll reveal
+  document.addEventListener('DOMContentLoaded', () => {
+    const revealEls = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      revealEls.forEach(el => el.classList.add('reveal-active'));
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
   });
 </script>
 </body>

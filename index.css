@@ -234,6 +234,7 @@ nav ul a:focus-visible::after {
   line-height: 1.7;
   color: #f5f5f5;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .head .cta-buttons {
@@ -382,6 +383,7 @@ nav ul a:focus-visible::after {
   line-height: 1.5;
   margin-bottom: 16px;
   color: #f0f0f0;
+  text-align: left;
 }
 
 .header-text p strong { color: #e9b60d; }
