@@ -324,11 +324,12 @@ nav ul a:focus-visible::after {
 }
 
   .service-title{
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 100;
+    font-weight: 700;
+    margin-top: 40px;
   }
 
 .services-grid {
