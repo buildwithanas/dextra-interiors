@@ -221,7 +221,7 @@ nav ul a:focus-visible::after {
 }
 
 .head h2 {
-  font-size: clamp(1.8rem, 5.5vw, 3.4rem);
+  font-size: clamp(1.6rem, 5.0vw, 3.0rem);
   font-weight: 500;
   color: #e9b60d;
   letter-spacing: -0.02em;
@@ -230,7 +230,7 @@ nav ul a:focus-visible::after {
 }
 
 .head p {
-  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  font-size: clamp(0.65rem, 1.6vw, 1.0rem);
   line-height: 1.7;
   color: #f5f5f5;
   margin-bottom: 12px;
@@ -254,7 +254,7 @@ nav ul a:focus-visible::after {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border-radius: 8px;
   font-size: clamp(0.85rem, 1.6vw, 1rem);
   font-weight: 700;
