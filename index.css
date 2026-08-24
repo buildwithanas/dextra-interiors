@@ -319,7 +319,7 @@ nav ul a:focus-visible::after {
 
 .stat-number {
   font-size: clamp(1.3rem, 3vw, 1.8rem);
-  font-weight: 800;
+  font-weight: 700;
   color: #e9b60d;
   display: block;
 }
