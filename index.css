@@ -726,7 +726,7 @@ nav ul a:focus-visible::after {
 }
 
 /* ============================================
-   CALL TO ACTION
+  CALL TO ACTION
    ============================================ */
 .cta-section {
   background: linear-gradient(135deg, #141414 0%, #1a1505 100%);
@@ -753,7 +753,7 @@ nav ul a:focus-visible::after {
 }
 
 /* ============================================
-   SCROLL REVEAL ANIMATION
+  SCROLL REVEAL ANIMATION
    ============================================ */
 .reveal {
   opacity: 0;

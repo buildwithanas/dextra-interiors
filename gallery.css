@@ -195,7 +195,7 @@ nav ul a:focus-visible::after {
 }
 
 /* ============================================
-   GALLERY GRID
+  GALLERY GRID
    ============================================ */
 .gallery {
   display: grid;
