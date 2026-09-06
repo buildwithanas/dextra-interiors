@@ -585,7 +585,7 @@ nav ul a:focus-visible::after {
 }
 
 /* ============================================
-   HOW WE WORK / PROCESS
+  HOW WE WORK / PROCESS
    ============================================ */
 .process-section {
   padding: 0 20px clamp(50px, 7vw, 60px);
@@ -670,7 +670,7 @@ nav ul a:focus-visible::after {
 }
 
 /* ============================================
-   WHY CHOOSE US
+  WHY CHOOSE US
    ============================================ */
 .features-section {
   padding: 0 20px clamp(50px, 7vw, 80px);
