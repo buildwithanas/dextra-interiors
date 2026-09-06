@@ -160,12 +160,12 @@ nav ul a:focus-visible::after {
   }
 }
 
-    /* ── Page wrapper ── */
-    .contact-page {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-    }
+  /* ── Page wrapper ── */
+  .contact-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
 
   /* ── Page hero banner ── */
   .contact-hero {
