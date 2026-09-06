@@ -228,13 +228,8 @@ nav ul a:focus-visible::after {
   }
 }
 
-
-
-
-
-
 /* ============================================
-   SCROLL REVEAL ANIMATION
+  SCROLL REVEAL ANIMATION
    ============================================ */
 .reveal {
   opacity: 0;
